@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "986981232678",
+    "project_id": "aplikasi-pemesanan-makan-5bf2a",
+    "storage_bucket": "aplikasi-pemesanan-makan-5bf2a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986981232678:android:f3acc863c4d0210bedf6e7",
+        "android_client_info": {
+          "package_name": "com.example.aplikasipemesananmakanan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986981232678-m8s35l3br5r4j79fn19urtsktdp17l8n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0Qh-ebH--rDivsdeRWxA5lSIcu8_NJKI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986981232678-m8s35l3br5r4j79fn19urtsktdp17l8n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DaftarPesanan">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/txtDaftarPesanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="monospace"
+                android:text="Daftar Pesanan"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec_listPesanan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:id="@+id/txtTotal"
+                android:layout_width="386dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Total :"
+                android:textAlignment="textEnd"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTotItemPesanan"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:text="10" />
+
+            <TextView
+                android:id="@+id/txtTotalHargaPesanan"
+                android:layout_width="384dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Rp.15.000"
+                android:textAlignment="viewEnd"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPilih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="\n  Pilih Pembayaran :"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <RadioGroup
+
+                android:id="@+id/radGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="20dp"
+                android:paddingEnd="40dp">
+
+                <RadioButton
+                    android:id="@+id/radTunai"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:fontFamily="monospace"
+                    android:text="Tunai"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radDebit"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:fontFamily="monospace"
+                    android:text="Debit "
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+                <RadioButton
+                    android:id="@+id/radDigital"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:fontFamily="monospace"
+                    android:text="Saldo Digital"
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+            </RadioGroup>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="82dp">
+
+                <Button
+                    android:id="@+id/tblBayar"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:text="BAYAR PESANAN"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
